@@ -3,10 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todo App</title>
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="Firas.css">
 </head>
 <body>
-    Hej Hej
-    Hur mar du?
+
+    <div class="todo-container">
+        <!-- Header with the title -->
+        <div class="todo-header">
+            <h1>Todo App / Task1 </h1>
+        </div>
+
+        <!-- Input container for adding new todos -->
+        <div class="input-container">
+            <input type="text" id="todo-input" placeholder="Lägg till ny todo..">
+            <button id="add-todo">+</button>
+        </div>
+
+        <!-- Todo list display area -->
+        <ul class="todo-list" id="todo-list"></ul>
+
+        <!-- Search container for filtering todos -->
+        <div class="search-container">
+            <input type="text" id="search-todo" placeholder="Sök todo..">
+        </div>
+
+        <!-- Footer (optional) -->
+        <div class="todo-footer">
+            <small>Firas Hammamih</small>
+        </div>
+    </div>
+
+    <!-- JavaScript file for functionality -->
+    <script src="Firas.js"></script>
 </body>
 </html>
