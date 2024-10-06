@@ -109,3 +109,8 @@ body {
     margin-top: 10px;
     text-decoration: dotted;
 }
+
+.completed {
+    text-decoration: line-through; /* يضيف خطاً على النص */
+    color: gray; /* يمكنك تغيير اللون إذا أردت */
+}

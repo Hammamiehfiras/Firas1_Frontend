@@ -4,6 +4,7 @@ const addTodoButton = document.getElementById('add-todo');
 const todoList = document.getElementById('todo-list');
 const searchInput = document.getElementById('search-todo');
 
+
 // Load todos from Local Storage or start empty
 let todos = JSON.parse(localStorage.getItem('todos')) || [];
 
@@ -31,9 +32,10 @@ const addTodo = () => {
 
 // Toggle complete status and update
 function toggleComplete(i) {
-    todos[i].completed = !todos[i].completed;
-    updateTodos();
+    todos[i].completed = !todos[i].completed; // عكس الحالة الحالية
+    updateTodos(); // تحديث قائمة المهام
 }
+
 
 // Update local storage and re-render
 const updateTodos = () => {
